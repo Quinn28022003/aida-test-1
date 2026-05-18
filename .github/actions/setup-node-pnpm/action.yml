@@ -1,13 +1,10 @@
 name: Setup Node and pnpm
-description: Checkout repository, install pnpm, setup Node.js with pnpm cache, and install packages
+description: Install pnpm, setup Node.js with pnpm cache, and install packages
 
 runs:
   using: composite
 
   steps:
-    - name: Checkout repository
-      uses: actions/checkout@v6
-
     - name: Setup pnpm
       uses: pnpm/action-setup@v6
 

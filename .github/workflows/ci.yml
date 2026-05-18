@@ -23,6 +23,8 @@ jobs:
       pull-requests: write
 
     steps:
+      - uses: actions/checkout@v6
+
       - name: Setup Node and pnpm
         uses: ./.github/actions/setup-node-pnpm
 
@@ -72,6 +74,8 @@ jobs:
       SUPABASE_SERVICE_ROLE_KEY: ci-service-role-key
 
     steps:
+      - uses: actions/checkout@v6
+
       - name: Setup Node and pnpm
         uses: ./.github/actions/setup-node-pnpm
 
@@ -109,6 +113,8 @@ jobs:
       SUPABASE_PROJECT_REF: ${{ secrets.SUPABASE_PROJECT_REF }}
 
     steps:
+      - uses: actions/checkout@v6
+
       - name: Setup Node and pnpm
         uses: ./.github/actions/setup-node-pnpm
 
@@ -139,6 +145,8 @@ jobs:
       SUPABASE_PROJECT_REF: ${{ secrets.SUPABASE_PROJECT_REF }}
 
     steps:
+      - uses: actions/checkout@v6
+
       - name: Setup Node and pnpm
         uses: ./.github/actions/setup-node-pnpm
 
@@ -172,6 +180,8 @@ jobs:
       SUPABASE_PROJECT_REF: ${{ secrets.SUPABASE_PROJECT_REF }}
 
     steps:
+      - uses: actions/checkout@v6
+
       - name: Setup Node and pnpm
         uses: ./.github/actions/setup-node-pnpm
 
@@ -204,6 +214,8 @@ jobs:
       SUPABASE_PROJECT_REF: ${{ secrets.SUPABASE_PROJECT_REF }}
 
     steps:
+      - uses: actions/checkout@v6
+
       - name: Setup Node and pnpm
         uses: ./.github/actions/setup-node-pnpm
 
