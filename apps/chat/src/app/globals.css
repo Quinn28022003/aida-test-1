@@ -1,0 +1,70 @@
+:root {
+  color-scheme: light;
+  --bg: #f3f1e6;
+  --card: #ffffff;
+  --ink: #1d1a15;
+  --accent: #2d6a4f;
+  --accent-soft: #e4f1e9;
+  --border: #e3ddd0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Avenir Next', 'Trebuchet MS', 'Segoe UI', sans-serif;
+  background: radial-gradient(1200px 800px at 20% 10%, #fef7e8 0%, var(--bg) 60%, #e8f0f7 100%);
+  color: var(--ink);
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 24px;
+}
+
+.card {
+  width: min(640px, 100%);
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 32px;
+  box-shadow: 0 20px 40px rgba(17, 12, 46, 0.12);
+}
+
+.badge {
+  display: inline-block;
+  padding: 6px 12px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  border-radius: 999px;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+h1 {
+  margin: 0 0 12px;
+  font-size: 32px;
+  letter-spacing: -0.02em;
+}
+
+p {
+  margin: 6px 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.status {
+  font-weight: 600;
+}
+
+.hint {
+  margin-top: 14px;
+  color: #4b4b4b;
+}
